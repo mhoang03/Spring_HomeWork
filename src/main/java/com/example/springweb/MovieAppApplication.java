@@ -22,4 +22,5 @@ public class MovieAppApplication {
                 .registerTypeAdapter(LocalDate.class, (JsonDeserializer<LocalDate>) (json, type, context) -> LocalDate.parse(json.getAsString(), DateTimeFormatter.ISO_LOCAL_DATE))
                 .create();
     }
+
 }
